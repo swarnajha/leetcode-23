@@ -1,1 +1,1 @@
-#solution of leetcode-23
+#solution of leetcode-23 in java
