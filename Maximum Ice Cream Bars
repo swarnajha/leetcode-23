@@ -1,0 +1,12 @@
+class Solution {
+    public int maxIceCream(int[] costs, int coins) {
+        Arrays.sort(costs);
+        int n = costs.length;
+        int a = 0;
+        while (a < n && costs[a] <= coins) { 
+            coins -= costs[a];
+            a += 1;
+        }
+        return a;
+    }
+}
