@@ -1,0 +1,15 @@
+es (12 sloc)  361 Bytes
+
+class Solution {
+    public String gcdOfStrings(String s1, String s2) {
+        if (!(s1 + s2).equals(s2 + s1)) {
+            return "";
+        }
+        int gcdLength = gcd(s1.length(), s2.length());
+        return s1.substring(0, gcdLength);
+    }
+    
+     int gcd(int a, int b) {
+        return b == 0 ? a : gcd(b, a % b);
+    }
+}
